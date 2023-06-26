@@ -20,6 +20,10 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
         <>
             <Head>
                 <title>Yap & Eling</title>
+                <meta
+                    name="viewport"
+                    content="minimum-scale=1, initial-scale=1, width=device-width"
+                />
             </Head>
             <PreloadImageProvider>
                 <AnimatePresence mode="wait" initial={false}>
