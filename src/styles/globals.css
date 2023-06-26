@@ -180,10 +180,12 @@ body {
 
 div[data-ishidden="true"] {
     animation: 0.5s linear 0s HideContent;
+    opacity: 0;
 }
 
 div[data-ishidden="false"] {
     animation: 0.5s linear 0s ShowContent;
+    opacity: 1;
 }
 
 
