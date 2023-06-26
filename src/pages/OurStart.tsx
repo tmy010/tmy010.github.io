@@ -29,7 +29,7 @@ const OurStart = () => {
     const renderDayString = useMemo(() => {
         return (
             <>
-                <div className="flex h-full w-full items-center justify-center">
+                <div className="flex h-full w-full items-center justify-center pt-24">
                     <AnimatedElementLayout nextPath="OurFirstMet">
                         <div className="relative">
                             <div className="text-center text-5xl font-bold leading-normal">

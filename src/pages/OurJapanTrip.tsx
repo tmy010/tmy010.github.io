@@ -36,7 +36,7 @@ const OurJapanTrip = () => {
                     />
                 </div>
                 <div
-                    className="flex h-full w-full items-center justify-center"
+                    className="flex h-full w-full items-center justify-center pt-24"
                 >
                     <AnimatedElementLayout prevPath='OurBangkokTrip'>
                         <>

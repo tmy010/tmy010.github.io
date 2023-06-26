@@ -38,7 +38,7 @@ const OurFirstMet = () => {
                         draggable={false}
                     />
                 </div>
-                <div className="flex h-full w-full items-center justify-center">
+                <div className="flex h-full w-full items-center justify-center pt-24">
                     <AnimatedElementLayout
                         nextPath="OurFirstCall"
                         prevPath="OurStart"
