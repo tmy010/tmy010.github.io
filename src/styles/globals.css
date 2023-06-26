@@ -190,7 +190,6 @@ div[data-ishidden="true"] {
 
 div[data-ishidden="false"] {
     animation: 0.5s linear 0s ShowContent;
-    opacity: 1;
 }
 
 

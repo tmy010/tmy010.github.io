@@ -8,15 +8,19 @@ const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:str
 
     const handleDrag = (offsetX: number) => {
         if (offsetX < -45 && nextPath) {
-            setIsHidden(true)
+            setTimeout(() => {
+                setIsHidden(true)
+            }, 500)
             setTimeout(() => {
                 router.replace(`${nextPath}?from=left`)
-            }, 500)
+            }, 1000)
         } else if (offsetX > 45 && prevPath) {
-            setIsHidden(true)
+            setTimeout(() => {
+                setIsHidden(true)
+            }, 500)
             setTimeout(() => {
                 router.replace(`${prevPath}?from=right`)
-            }, 500)
+            }, 1000)
         }
     }
 
