@@ -41,6 +41,7 @@ const OurFirstDate = () => {
                                 </div>
                                 <div className="absolute translate-x-1/2 bottom-full right-1/2 w-52">
                                     <Image
+                                        priority={true}
                                         src={FirstDate}
                                         alt="FirstDate"
                                         className="object-contain select-none"

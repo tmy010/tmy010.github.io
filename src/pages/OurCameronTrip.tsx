@@ -41,6 +41,7 @@ const OurCameronTrip = () => {
                                 </div>
                                 <div className="absolute translate-x-1/2 bottom-full right-1/2 w-52">
                                     <Image
+                                        priority={true}
                                         src={Cameron}
                                         alt="Cameron"
                                         className="object-contain select-none"

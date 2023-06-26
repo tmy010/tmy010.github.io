@@ -16,7 +16,7 @@ const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:str
         } else if (offsetX > 45 && prevPath) {
             setIsHidden(true)
             setTimeout(() => {
-                router.replace(`${prevPath}?from=right`)
+                router.push(`${prevPath}?from=right`)
             }, 500)
         }
     }
@@ -26,7 +26,6 @@ const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:str
             key={router.route}
             drag="x"
             dragSnapToOrigin
-            dragTransition={{}}
             onDragEnd={(_, i) => {
                 handleDrag(i.offset.x)
             }}

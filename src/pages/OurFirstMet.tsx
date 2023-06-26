@@ -27,6 +27,7 @@ const OurFirstMet = () => {
             <>
                 <div className='absolute' data-ishidden="false">
                     <Image
+                        priority={true}
                         src={Bunting}
                         alt="Bunting"
                         className="object-contain select-none"
@@ -50,6 +51,7 @@ const OurFirstMet = () => {
                                 </div>
                                 <div className="absolute translate-x-1/2 bottom-full right-1/2 w-52">
                                     <Image
+                                        priority={true}
                                         src={Connors}
                                         alt="Connors"
                                         className="object-contain select-none"
