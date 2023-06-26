@@ -1,19 +1,19 @@
 import moment from "moment";
 
 export enum EventName {
-    OurStart = "OurStart",
-    OurFirstMet = "OurFirstMet",
-    OurFirstCall = "OurFirstCall",
-    OurPenangTrip = "OurPenangTrip",
-    OurFirstDate = "OurFirstDate",
-    OurFirstDay = "OurFirstDay",
-    OurCameronTrip = "OurCameronTrip",
-    OurBangkokTrip = "OurBangkokTrip",
-    OurJapanTrip = "OurJapanTrip",
+    OurStart = "Our Start",
+    OurFirstMet = "Our First Met",
+    OurFirstCall = "Our First Call",
+    OurPenangTrip = "Our Penang Trip",
+    OurFirstDate = "Our First Date",
+    OurFirstDay = "Our First Day",
+    OurCameronTrip = "Our Cameron Trip",
+    OurBangkokTrip = "Our Bangkok Trip",
+    OurJapanTrip = "Our Japan Trip",
 }
 
 export class EventDates {
-    static Now = moment('2023-06-08').valueOf()
+    static Now = moment().startOf('day').valueOf()
     static OurStart = moment('2023-03-10').valueOf()
     static OurFirstMet = moment('2023-03-24').valueOf()
     static OurFirstCall = moment('2023-03-30').valueOf()

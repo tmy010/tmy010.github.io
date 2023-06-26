@@ -8,6 +8,15 @@
     --background-end-rgb: 255, 255, 255;
 }
 
+@keyframes PageTwoToPageOne {
+    0% {
+        background: #1f4e79;
+    }
+    100% {
+        background: #efeae6;
+    }
+}
+
 @keyframes PageOneToPageTwo {
     0% {
         background: #efeae6;
@@ -17,12 +26,151 @@
     }
 }
 
-@keyframes PageExit {
+@keyframes PageThreeToPageTwo {
     0% {
-        background: #efeae6;
+        background: #8FC9AE;
     }
     100% {
         background: #1f4e79;
+    }
+}
+
+@keyframes PageTwoToPageThree {
+    0% {
+        background: #1f4e79;
+    }
+    100% {
+        background: #8FC9AE;
+    }
+}
+
+@keyframes PageFourToPageThree {
+    0% {
+        background: #9CD9DE;
+    }
+    100% {
+        background: #8FC9AE;
+    }
+}
+
+@keyframes PageThreeToPageFour {
+    0% {
+        background: #8FC9AE;
+    }
+    100% {
+        background: #9CD9DE;
+    }
+}
+
+@keyframes PageFiveToPageFour {
+    0% {
+        background: #E16262;
+    }
+    100% {
+        background: #9CD9DE;
+    }
+}
+
+@keyframes PageFourToPageFive {
+    0% {
+        background: #9CD9DE;
+    }
+    100% {
+        background: #E16262;
+    }
+}
+
+@keyframes PageSixToPageFive {
+    0% {
+        background: #FFC0C2;
+    }
+    100% {
+        background: #E16262;
+    }
+}
+
+@keyframes PageFiveToPageSix {
+    0% {
+        background: #E16262;
+    }
+    100% {
+        background: #FFC0C2;
+    }
+}
+
+@keyframes PageSevenToPageSix {
+    0% {
+        background: #C5ECBE;
+    }
+    100% {
+        background: #FFC0C2;
+    }
+}
+
+
+@keyframes PageSixToPageSeven {
+    0% {
+        background: #FFC0C2;
+    }
+    100% {
+        background: #C5ECBE;
+    }
+}
+
+@keyframes PageEightToPageSeven {
+    0% {
+        background: #D3F5FF;
+    }
+    100% {
+        background: #C5ECBE;
+    }
+}
+
+@keyframes PageSevenToPageEight {
+    0% {
+        background: #C5ECBE;
+    }
+    100% {
+        background: #D3F5FF;
+    }
+}
+
+@keyframes PageNineToPageEight {
+    0% {
+        background: #F2E6CE;
+    }
+    100% {
+        background: #D3F5FF;
+    }
+}
+
+@keyframes PageEightToPageNine {
+    0% {
+        background: #D3F5FF;
+    }
+    100% {
+        background: #F2E6CE;
+    }
+}
+
+
+
+
+@keyframes HideContent {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes ShowContent {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }
 
@@ -31,32 +179,152 @@ body {
     overflow: hidden;
 }
 
-div[data-currentroute='/OurStart'] {
+div[data-ishidden="true"] {
+    animation: 0.5s linear 0s HideContent;
+}
+
+div[data-ishidden="false"] {
+    animation: 0.5s linear 0s ShowContent;
+}
+
+
+.background-container[data-currentroute='/OurStart'] {
     background: #efeae6;
+    color: #65503e;
 }
 
-div[data-currentroute='/OurFirstMet?from=left'] {
-    animation: 0.5s linear 0s PageOneToPageTwo;
-    color: #8edffa;
+.background-container[data-currentroute='/OurStart?from=right'] {
+    animation: 0.5s linear 0s PageTwoToPageOne;
+    background: #efeae6;
+    color: #65503e;
 }
 
-div[data-currentroute='/OurFirstMet?from=right'] {
-    animation: 0.5s linear 0s PageOneToPageTwo;
-    animation: alternate;
-    color: #8edffa;
-}
-
-div[data-currentroute='/OurFirstMet'] {
+.background-container[data-currentroute='/OurFirstMet'] {
     background: #1f4e79;
     color: #8edffa;
 }
 
-div[data-currentroute='/OurFirstMet?from=left'] {
+.background-container[data-currentroute='/OurFirstMet?from=left'] {
     animation: 0.5s linear 0s PageOneToPageTwo;
+    background: #1f4e79;
     color: #8edffa;
 }
 
-div[data-currentroute='/OurFirstMet?from=right'] {
-    animation: 0.5s linear 0s PageOneToPageTwo;
+.background-container[data-currentroute='/OurFirstMet?from=right'] {
+    animation: 0.5s linear 0s PageThreeToPageTwo;
+    background: #1f4e79;
     color: #8edffa;
+}
+
+.background-container[data-currentroute='/OurFirstCall'] {
+    background: #8FC9AE;
+    color: #385B66;
+}
+
+.background-container[data-currentroute='/OurFirstCall?from=left'] {
+    animation: 0.5s linear 0s PageTwoToPageThree;
+    background: #8FC9AE;
+    color: #385B66;
+}
+
+.background-container[data-currentroute='/OurFirstCall?from=right'] {
+    animation: 0.5s linear 0s PageFourToPageThree;
+    background: #8FC9AE;
+    color: #385B66;
+}
+
+.background-container[data-currentroute='/OurPenangTrip'] {
+    background: #9CD9DE;
+    color: #588D9C;
+}
+
+.background-container[data-currentroute='/OurPenangTrip?from=left'] {
+    animation: 0.5s linear 0s PageThreeToPageFour;
+    background: #9CD9DE;
+    color: #588D9C;
+}
+
+.background-container[data-currentroute='/OurPenangTrip?from=right'] {
+    animation: 0.5s linear 0s PageFiveToPageFour;
+    background: #9CD9DE;
+    color: #588D9C;
+}
+
+.background-container[data-currentroute='/OurFirstDate'] {
+    background: #E16262;
+    color: #FABC60;
+}
+
+.background-container[data-currentroute='/OurFirstDate?from=left'] {
+    animation: 0.5s linear 0s PageFourToPageFive;
+    background: #E16262;
+    color: #FABC60;
+}
+
+.background-container[data-currentroute='/OurFirstDate?from=right'] {
+    animation: 0.5s linear 0s PageSixToPageFive;
+    background: #E16262;
+    color: #FABC60;
+}
+
+.background-container[data-currentroute='/OurFirstDay'] {
+    background: #FFC0C2;
+    color: #CE2300;
+}
+
+.background-container[data-currentroute='/OurFirstDay?from=left'] {
+    animation: 0.5s linear 0s PageFiveToPageSix;
+    background: #FFC0C2;
+    color: #CE2300;
+}
+
+.background-container[data-currentroute='/OurFirstDay?from=right'] {
+    animation: 0.5s linear 0s PageSevenToPageSix;
+    background: #FFC0C2;
+    color: #CE2300;
+}
+
+.background-container[data-currentroute='/OurCameronTrip'] {
+    background: #C5ECBE;
+    color: #4797B1;
+}
+
+.background-container[data-currentroute='/OurCameronTrip?from=left'] {
+    animation: 0.5s linear 0s PageSixToPageSeven;
+    background: #C5ECBE;
+    color: #4797B1;
+}
+
+.background-container[data-currentroute='/OurCameronTrip?from=right'] {
+    animation: 0.5s linear 0s PageEightToPageSeven;
+    background: #C5ECBE;
+    color: #4797B1;
+}
+
+.background-container[data-currentroute='/OurBangkokTrip'] {
+    background: #D3F5FF;
+    color: #232A31;
+}
+
+.background-container[data-currentroute='/OurBangkokTrip?from=left'] {
+    animation: 0.5s linear 0s PageSevenToPageEight;
+    background: #D3F5FF;
+    color: #232A31;
+}
+
+.background-container[data-currentroute='/OurBangkokTrip?from=right'] {
+    animation: 0.5s linear 0s PageNineToPageEight;
+    background: #D3F5FF;
+    color: #232A31;
+}
+
+.background-container[data-currentroute='/OurJapanTrip'] {
+    background: #F2E6CE;
+    color: #B22124;
+}
+
+.background-container[data-currentroute='/OurJapanTrip?from=left'] {
+    animation: 0.5s linear 0s PageEightToPageNine;
+    background: #F2E6CE;
+    color: #B22124;
 }

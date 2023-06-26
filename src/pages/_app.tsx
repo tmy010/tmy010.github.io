@@ -14,7 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
                 <div className={alegreya.className}>
                     <div
                         data-currentroute={router.asPath}
-                        className="h-screen w-screen"
+                        className="h-screen w-screen background-container"
                     >
                         <Component {...pageProps} />
                     </div>

@@ -1,45 +1,39 @@
 import { motion } from 'framer-motion'
+import { duration } from 'moment'
 import { useRouter } from 'next/router'
+import { useState } from 'react'
 
-const AnimatedElementLayout = ({ children }: { children: JSX.Element }) => {
+const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:string, nextPath?:string, children: JSX.Element }) => {
     const router = useRouter()
+    const [isHidden, setIsHidden] = useState<boolean>(false)
 
     const handleDrag = (offsetX: number) => {
-        if (offsetX < -45) {
+        if (offsetX < -45 && nextPath) {
+            setIsHidden(true)
             setTimeout(() => {
-                router.replace('/OurFirstMet')
+                router.push(`${nextPath}?from=left`)
             }, 500)
-        } else if (offsetX > 45) {
-            console.log('prev page')
+        } else if (offsetX > 45 && prevPath) {
+            setIsHidden(true)
+            setTimeout(() => {
+                router.replace(`${prevPath}?from=right`)
+            }, 500)
         }
     }
 
     return (
         <motion.div
             key={router.route}
-            initial="initial"
-            animate="animate"
-            exit="exit"
-            variants={{
-                initial: { x: '50vw' },
-                animate: {
-                    x: 0,
-                    transition: {
-                        duration: 0.5,
-                        type: 'spring',
-                        damping: 8,
-                        stiffness: 100,
-                    },
-                },
-                exit: { opacity: 0 },
-            }}
             drag="x"
             dragSnapToOrigin
+            dragTransition={{}}
             onDragEnd={(_, i) => {
                 handleDrag(i.offset.x)
             }}
         >
-            {children}
+            <div data-ishidden={isHidden}>
+                {children}
+            </div>
         </motion.div>
     )
 }
