@@ -1,13 +1,14 @@
 import AnimatedElementLayout from '@/components/layout/AnimatedElementLayout'
 import { EventDates, EventName } from '@/const/event'
+import { useImageContext } from '@/contexts/PreloadImageContext'
 import { findDifferentInDay } from '@/utils/FindDifferenceInDay'
 import { getMiddleString, getTopString } from '@/utils/GetDayString'
 import Image from 'next/image'
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import Japan from '../../public/images/Japan.png'
-import Sakura from '../../public/images/Sakura.png'
 
 const OurJapanTrip = () => {
+    const preloadedImage = useImageContext()
+    
     const [topString, setTopString] = useState<string>('')
     const [middleString, setMiddleString] = useState<string>('')
     const bottomString = EventName.OurJapanTrip
@@ -28,7 +29,7 @@ const OurJapanTrip = () => {
                 <div className='absolute right-0' data-ishidden="false">
                     <Image
                         priority={true}
-                        src={Sakura}
+                        src={preloadedImage.Sakura}
                         alt="Sakura"
                         className="object-contain select-none"
                         draggable={false}
@@ -52,7 +53,7 @@ const OurJapanTrip = () => {
                                 <div className="absolute translate-x-1/2 bottom-full right-1/2 w-52">
                                     <Image
                                         priority={true}
-                                        src={Japan}
+                                        src={preloadedImage.Japan}
                                         alt="Japan"
                                         className="object-contain select-none"
                                         draggable={false}

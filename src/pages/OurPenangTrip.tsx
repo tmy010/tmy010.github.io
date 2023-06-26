@@ -1,18 +1,23 @@
 import AnimatedElementLayout from '@/components/layout/AnimatedElementLayout'
 import { EventDates, EventName } from '@/const/event'
+import { useImageContext } from '@/contexts/PreloadImageContext'
 import { findDifferentInDay } from '@/utils/FindDifferenceInDay'
 import { getMiddleString, getTopString } from '@/utils/GetDayString'
 import Image from 'next/image'
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import Island from '../../public/images/Island.png'
 
 const OurPenangTrip = () => {
+    const preloadedImage = useImageContext()
+
     const [topString, setTopString] = useState<string>('')
     const [middleString, setMiddleString] = useState<string>('')
     const bottomString = EventName.OurPenangTrip
 
     const init = useCallback(() => {
-        const diffInDay = findDifferentInDay(EventDates.OurPenangTrip, EventDates.Now)
+        const diffInDay = findDifferentInDay(
+            EventDates.OurPenangTrip,
+            EventDates.Now
+        )
         setTopString(getTopString(diffInDay))
         setMiddleString(getMiddleString(diffInDay))
     }, [])
@@ -24,10 +29,11 @@ const OurPenangTrip = () => {
     const renderDayString = useMemo(() => {
         return (
             <>
-                <div
-                    className="flex h-full w-full items-center justify-center"
-                >
-                    <AnimatedElementLayout nextPath='OurFirstDate' prevPath='OurFirstCall'>
+                <div className="flex h-full w-full items-center justify-center">
+                    <AnimatedElementLayout
+                        nextPath="OurFirstDate"
+                        prevPath="OurFirstCall"
+                    >
                         <>
                             <div className="relative">
                                 <div className="text-center text-5xl font-bold leading-normal">
@@ -39,12 +45,12 @@ const OurPenangTrip = () => {
                                 <div className="text-center text-2xl font-bold leading-snug ">
                                     {bottomString}
                                 </div>
-                                <div className="absolute translate-x-1/2 bottom-full right-1/2 w-52">
+                                <div className="absolute bottom-full right-1/2 w-52 translate-x-1/2">
                                     <Image
                                         priority={true}
-                                        src={Island}
+                                        src={preloadedImage.Island}
                                         alt="Island"
-                                        className="object-contain select-none"
+                                        className="select-none object-contain"
                                         draggable={false}
                                     />
                                 </div>

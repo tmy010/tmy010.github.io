@@ -1,12 +1,14 @@
 import AnimatedElementLayout from '@/components/layout/AnimatedElementLayout'
 import { EventDates, EventName } from '@/const/event'
+import { useImageContext } from '@/contexts/PreloadImageContext'
 import { findDifferentInDay } from '@/utils/FindDifferenceInDay'
 import { getMiddleString, getTopString } from '@/utils/GetDayString'
 import Image from 'next/image'
 import { useCallback, useEffect, useMemo, useState } from 'react'
-import Bangkok from '../../public/images/Bangkok.png'
 
 const OurBangkokTrip = () => {
+    const preloadedImage = useImageContext()
+    
     const [topString, setTopString] = useState<string>('')
     const [middleString, setMiddleString] = useState<string>('')
     const bottomString = EventName.OurBangkokTrip
@@ -42,7 +44,7 @@ const OurBangkokTrip = () => {
                                 <div className="absolute translate-x-1/2 bottom-full right-1/2 w-52">
                                     <Image
                                         priority={true}
-                                        src={Bangkok}
+                                        src={preloadedImage.Bangkok}
                                         alt="Bangkok"
                                         className="object-contain select-none"
                                         draggable={false}
