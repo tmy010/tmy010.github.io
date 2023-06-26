@@ -45,7 +45,7 @@ const OurPenangTrip = () => {
                                 <div className="text-center text-2xl font-bold leading-snug ">
                                     {bottomString}
                                 </div>
-                                <div className="absolute bottom-full right-1/2 w-52 translate-x-1/2">
+                                <div className="absolute bottom-full right-[40%] w-52 translate-x-1/2">
                                     <Image
                                         priority={true}
                                         src={preloadedImage.Island}

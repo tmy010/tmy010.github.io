@@ -8,9 +8,7 @@ const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:str
 
     const handleDrag = (offsetX: number) => {
         if (offsetX < -45 && nextPath) {
-            setTimeout(() => {
-                setIsHidden(true)
-            }, 500)
+            setIsHidden(true)
             setTimeout(() => {
                 router.replace(`${nextPath}?from=left`)
             }, 1000)
@@ -32,7 +30,6 @@ const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:str
             onDragEnd={(_, i) => {
                 handleDrag(i.offset.x)
             }}
-            dragConstraints={{left: 50, right: 50}}
         >
             <div data-ishidden={isHidden}>
                 {children}

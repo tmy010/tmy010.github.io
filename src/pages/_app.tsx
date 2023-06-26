@@ -7,16 +7,14 @@ import { useRouter } from 'next/router'
 import '../styles/globals.css'
 import { useEffect } from 'react'
 
-
-
 const alegreya = Alegreya({ subsets: ['latin'] })
 const MyApp = ({ Component, pageProps }: AppProps) => {
     const router = useRouter()
 
     useEffect(() => {
-    const vh = window.innerHeight * 0.01
-    document.documentElement.style.setProperty('--vh', `${vh}px`)
-    },[])
+        const vh = window.innerHeight * 0.01
+        document.documentElement.style.setProperty('--vh', `${vh}px`)
+    }, [])
 
     return (
         <>
