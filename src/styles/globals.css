@@ -153,9 +153,6 @@
     }
 }
 
-
-
-
 @keyframes HideContent {
     0% {
         opacity: 1;
@@ -177,6 +174,8 @@
 body {
     margin: 0;
     overflow: hidden;
+    min-height: 100vh;
+    min-width: 100vw;
 }
 
 div[data-ishidden="true"] {

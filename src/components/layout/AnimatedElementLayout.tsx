@@ -1,5 +1,4 @@
 import { motion } from 'framer-motion'
-import { duration } from 'moment'
 import { useRouter } from 'next/router'
 import { useState } from 'react'
 
@@ -11,12 +10,12 @@ const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:str
         if (offsetX < -45 && nextPath) {
             setIsHidden(true)
             setTimeout(() => {
-                router.push(`${nextPath}?from=left`)
+                router.replace(`${nextPath}?from=left`)
             }, 500)
         } else if (offsetX > 45 && prevPath) {
             setIsHidden(true)
             setTimeout(() => {
-                router.push(`${prevPath}?from=right`)
+                router.replace(`${prevPath}?from=right`)
             }, 500)
         }
     }

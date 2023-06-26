@@ -18,11 +18,13 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
             <PreloadImageProvider>
                 <AnimatePresence mode="wait" initial={false}>
                     <div className={alegreya.className}>
-                        <div
-                            data-currentroute={router.asPath}
-                            className="background-container h-screen w-screen"
-                        >
-                            <Component {...pageProps} />
+                        <div className="h-screen w-screen">
+                            <div
+                                data-currentroute={router.asPath}
+                                className="background-container h-full w-full"
+                            >
+                                <Component {...pageProps} />
+                            </div>
                         </div>
                     </div>
                 </AnimatePresence>
