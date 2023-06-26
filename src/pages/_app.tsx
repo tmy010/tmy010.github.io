@@ -17,7 +17,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     const vh = window.innerHeight * 0.01
     document.documentElement.style.setProperty('--vh', `${vh}px`)
     window.screen.orientation.lock('portrait')
-    })
+    },[])
 
     return (
         <>
