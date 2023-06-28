@@ -14,6 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps) => {
     useEffect(() => {
         const vh = window.innerHeight * 0.01
         document.documentElement.style.setProperty('--vh', `${vh}px`)
+        screen.orientation.lock("portrait")
     }, [])
 
     return (
