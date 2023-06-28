@@ -60,7 +60,7 @@ const OurFirstDay = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.Confess, topString])
 
     return <>{renderDayString}</>
 }

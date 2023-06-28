@@ -13,9 +13,7 @@ const AnimatedElementLayout = ({ prevPath, nextPath, children }: { prevPath?:str
                 router.replace(`${nextPath}?from=left`)
             }, 1000)
         } else if (offsetX > 45 && prevPath) {
-            setTimeout(() => {
-                setIsHidden(true)
-            }, 500)
+            setIsHidden(true)
             setTimeout(() => {
                 router.replace(`${prevPath}?from=right`)
             }, 1000)

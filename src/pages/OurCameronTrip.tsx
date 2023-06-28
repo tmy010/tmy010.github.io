@@ -60,7 +60,7 @@ const OurCameronTrip = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.Cameron, topString])
 
     return <>{renderDayString}</>
 }

@@ -69,7 +69,7 @@ const OurFirstMet = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.Bunting, preloadedImage.Connors, topString])
 
     return <>{renderDayString}</>
 }

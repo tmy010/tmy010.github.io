@@ -58,7 +58,7 @@ const OurFirstCall = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.Call, topString])
 
     return <>{renderDayString}</>
 }

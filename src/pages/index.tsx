@@ -6,7 +6,7 @@ const Home = ()=>{
 
     useEffect(()=>{
         router.replace("OurStart")
-    },[])
+    },[router])
 
     return <></>
 }

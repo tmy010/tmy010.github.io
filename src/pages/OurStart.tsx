@@ -55,7 +55,7 @@ const OurStart = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.InstagramScreenshot, topString])
 
     return <>{renderDayString}</>
 }

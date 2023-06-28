@@ -60,7 +60,7 @@ const OurPenangTrip = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.Island, topString])
 
     return <>{renderDayString}</>
 }

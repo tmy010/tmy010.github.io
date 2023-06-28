@@ -9,13 +9,13 @@ import { useCallback, useEffect, useMemo, useState } from 'react'
 const OurJapanTrip = () => {
     const preloadedImage = useImageContext()
     
-    const [topString, setTopString] = useState<string>('')
+    const [topString, setTopString] = useState<string>('Unknown')
     const [middleString, setMiddleString] = useState<string>('')
     const bottomString = EventName.OurJapanTrip
 
     const init = useCallback(() => {
         const diffInDay = findDifferentInDay(EventDates.OurJapanTrip, EventDates.Now)
-        setTopString(getTopString(diffInDay))
+        // setTopString(getTopString(diffInDay))
         setMiddleString(getMiddleString(diffInDay))
     }, [])
 
@@ -65,7 +65,7 @@ const OurJapanTrip = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.Japan, preloadedImage.Sakura, topString])
 
     return <>{renderDayString}</>
 }

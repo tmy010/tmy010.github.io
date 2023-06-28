@@ -1,7 +1,7 @@
 export const getTopString = (diffInDay: number): string => {
     if (diffInDay == 0) return 'Today'
-    else if (diffInDay == -1) return 'Tomorrow'
-    else if (diffInDay == 1) return 'Yesterday'
+    else if (diffInDay == 1) return 'Tomorrow'
+    else if (diffInDay == -1) return 'Yesterday'
     else return Math.abs(diffInDay).toString()
 }
 

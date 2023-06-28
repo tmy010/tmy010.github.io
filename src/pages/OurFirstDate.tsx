@@ -60,7 +60,7 @@ const OurFirstDate = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, topString])
+    }, [bottomString, middleString, preloadedImage.FirstDate, topString])
 
     return <>{renderDayString}</>
 }
