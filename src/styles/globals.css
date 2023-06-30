@@ -82,7 +82,7 @@
 
 @keyframes PageSixToPageFive {
     0% {
-        background: #FFC0C2;
+        background: #A4C3D2;
     }
     100% {
         background: #E16262;
@@ -94,7 +94,7 @@
         background: #E16262;
     }
     100% {
-        background: #FFC0C2;
+        background: #A4C3D2;
     }
 }
 
@@ -103,14 +103,14 @@
         background: #C5ECBE;
     }
     100% {
-        background: #FFC0C2;
+        background: #A4C3D2;
     }
 }
 
 
 @keyframes PageSixToPageSeven {
     0% {
-        background: #FFC0C2;
+        background: #A4C3D2;
     }
     100% {
         background: #C5ECBE;
@@ -274,20 +274,20 @@ div[data-ishidden="false"] {
 }
 
 .background-container[data-currentroute='/OurFirstDay'] {
-    background: #FFC0C2;
-    color: #CE2300;
+    background: #A4C3D2;
+    color: #78A2CC;
 }
 
 .background-container[data-currentroute='/OurFirstDay?from=left'] {
     animation: 0.5s linear 0s PageFiveToPageSix;
-    background: #FFC0C2;
-    color: #CE2300;
+    background: #A4C3D2;
+    color: #78A2CC;
 }
 
 .background-container[data-currentroute='/OurFirstDay?from=right'] {
     animation: 0.5s linear 0s PageSevenToPageSix;
-    background: #FFC0C2;
-    color: #CE2300;
+    background: #A4C3D2;
+    color: #78A2CC;
 }
 
 .background-container[data-currentroute='/OurCameronTrip'] {
