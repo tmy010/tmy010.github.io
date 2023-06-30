@@ -290,18 +290,18 @@ div[data-ishidden="false"] {
     color: #78A2CC;
 }
 
-.background-container[data-currentroute='/OurCameronTrip'] {
+.background-container[data-currentroute='/OurKLTrip'] {
     background: #C5ECBE;
     color: #4797B1;
 }
 
-.background-container[data-currentroute='/OurCameronTrip?from=left'] {
+.background-container[data-currentroute='/OurKLTrip?from=left'] {
     animation: 0.5s linear 0s PageSixToPageSeven;
     background: #C5ECBE;
     color: #4797B1;
 }
 
-.background-container[data-currentroute='/OurCameronTrip?from=right'] {
+.background-container[data-currentroute='/OurKLTrip?from=right'] {
     animation: 0.5s linear 0s PageEightToPageSeven;
     background: #C5ECBE;
     color: #4797B1;
