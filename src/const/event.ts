@@ -19,8 +19,8 @@ export class EventDates {
     static OurFirstCall = moment('2023-03-30').valueOf()
     static OurPenangTrip = moment('2023-04-15').valueOf()
     static OurFirstDate = moment('2023-05-20').valueOf()
-    static OurFirstDay = moment('2023-06-29').valueOf()
-    static OurCameronTrip = moment('2023-06-30').valueOf()
+    static OurFirstDay = moment('2023-07-01').valueOf()
+    static OurCameronTrip = moment('2023-06-29').valueOf()
     static OurBangkokTrip = moment('2023-07-27').valueOf()
     static OurJapanTrip = moment('2024-06-01').valueOf()
 }
