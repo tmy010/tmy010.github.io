@@ -7,7 +7,7 @@ export enum EventName {
     OurPenangTrip = "Our Penang Trip",
     OurFirstDate = "Our First Date",
     OurFirstDay = "Our First Day",
-    OurCameronTrip = "Our Cameron Trip",
+    OurCameronTrip = "Our KL Trip",
     OurBangkokTrip = "Our Bangkok Trip",
     OurJapanTrip = "Our Japan Trip",
 }
