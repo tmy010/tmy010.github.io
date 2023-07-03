@@ -82,7 +82,7 @@
 
 @keyframes PageSixToPageFive {
     0% {
-        background: #A4C3D2;
+        background: #C5ECBE;
     }
     100% {
         background: #E16262;
@@ -94,26 +94,26 @@
         background: #E16262;
     }
     100% {
-        background: #A4C3D2;
+        background: #C5ECBE;
     }
 }
 
 @keyframes PageSevenToPageSix {
     0% {
-        background: #C5ECBE;
+        background: #A4C3D2;
     }
     100% {
-        background: #A4C3D2;
+        background: #C5ECBE;
     }
 }
 
 
 @keyframes PageSixToPageSeven {
     0% {
-        background: #A4C3D2;
+        background: #C5ECBE;
     }
     100% {
-        background: #C5ECBE;
+        background: #A4C3D2;
     }
 }
 
@@ -122,13 +122,13 @@
         background: #D3F5FF;
     }
     100% {
-        background: #C5ECBE;
+        background: #A4C3D2;
     }
 }
 
 @keyframes PageSevenToPageEight {
     0% {
-        background: #C5ECBE;
+        background: #A4C3D2;
     }
     100% {
         background: #D3F5FF;
@@ -273,39 +273,40 @@ div[data-ishidden="false"] {
     color: #FABC60;
 }
 
-.background-container[data-currentroute='/OurFirstDay'] {
-    background: #A4C3D2;
-    color: #78A2CC;
-}
-
-.background-container[data-currentroute='/OurFirstDay?from=left'] {
-    animation: 0.5s linear 0s PageFiveToPageSix;
-    background: #A4C3D2;
-    color: #78A2CC;
-}
-
-.background-container[data-currentroute='/OurFirstDay?from=right'] {
-    animation: 0.5s linear 0s PageSevenToPageSix;
-    background: #A4C3D2;
-    color: #78A2CC;
-}
-
 .background-container[data-currentroute='/OurKLTrip'] {
     background: #C5ECBE;
     color: #4797B1;
 }
 
 .background-container[data-currentroute='/OurKLTrip?from=left'] {
-    animation: 0.5s linear 0s PageSixToPageSeven;
+    animation: 0.5s linear 0s PageFiveToPageSix;
     background: #C5ECBE;
     color: #4797B1;
 }
 
 .background-container[data-currentroute='/OurKLTrip?from=right'] {
-    animation: 0.5s linear 0s PageEightToPageSeven;
+    animation: 0.5s linear 0s PageSevenToPageSix;
     background: #C5ECBE;
     color: #4797B1;
 }
+
+.background-container[data-currentroute='/OurFirstDay'] {
+    background: #A4C3D2;
+    color: #78A2CC;
+}
+
+.background-container[data-currentroute='/OurFirstDay?from=left'] {
+    animation: 0.5s linear 0s PageSixToPageSeven;
+    background: #A4C3D2;
+    color: #78A2CC;
+}
+
+.background-container[data-currentroute='/OurFirstDay?from=right'] {
+    animation: 0.5s linear 0s PageEightToPageSeven;
+    background: #A4C3D2;
+    color: #78A2CC;
+}
+
 
 .background-container[data-currentroute='/OurBangkokTrip'] {
     background: #D3F5FF;

@@ -31,7 +31,7 @@ const OurFirstDate = () => {
             <>
                 <div className="flex h-full w-full items-center justify-center pt-24">
                     <AnimatedElementLayout
-                        nextPath="OurFirstDay"
+                        nextPath="OurKLTrip"
                         prevPath="OurPenangTrip"
                     >
                         <>

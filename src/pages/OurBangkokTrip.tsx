@@ -29,7 +29,7 @@ const OurBangkokTrip = () => {
                 <div
                     className="flex h-full w-full items-center justify-center pt-24"
                 >
-                    <AnimatedElementLayout nextPath='OurJapanTrip' prevPath='OurKLTrip'>
+                    <AnimatedElementLayout nextPath='OurJapanTrip' prevPath='OurFirstDay'>
                         <>
                             <div className="relative">
                                 <div className="text-center text-5xl font-bold leading-normal">
