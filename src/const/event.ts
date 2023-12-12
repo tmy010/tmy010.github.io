@@ -9,6 +9,7 @@ export enum EventName {
     OurFirstDay = "Our First Day",
     OurCameronTrip = "Our KL Trip",
     OurBangkokTrip = "Our Bangkok Trip",
+    OurFirstCoding = "Rock! Paper! Scissors!",
     OurJapanTrip = "Our Japan Trip",
 }
 
@@ -22,6 +23,7 @@ export class EventDates {
     static OurFirstDay = moment('2023-07-01').valueOf()
     static OurCameronTrip = moment('2023-06-29').valueOf()
     static OurBangkokTrip = moment('2023-07-27').valueOf()
+    static OurFirstCoding = moment('2023-12-12').valueOf()
     static OurJapanTrip = moment('2024-06-01').valueOf()
 }
 
@@ -34,6 +36,7 @@ export enum EventTextColor {
     OurFirstDay = "#CE2300",
     OurCameronTrip = "#C5ECBE",
     OurBangkokTrip = "#232A31",
+    OurFirstCoding = '#3F1651',
     OurJapanTrip = "#B22124",
 }
 
@@ -46,5 +49,6 @@ export enum EventBackgroundColor {
     OurFirstDay = "#FFC0C2",
     OurCameronTrip = "#4797B1",
     OurBangkokTrip = "#D3F5FF",
+    OurFirstCoding = '#653780',
     OurJapanTrip = "#F2E6CE",
 }

@@ -11,11 +11,11 @@ const OurBangkokTrip = () => {
 
     const [topString, setTopString] = useState<string>('')
     const [middleString, setMiddleString] = useState<string>('')
-    const bottomString = EventName.OurBangkokTrip
+    const bottomString = EventName.OurFirstCoding
 
     const init = useCallback(() => {
         const diffInDay = findDifferentInDay(
-            EventDates.OurBangkokTrip,
+            EventDates.OurFirstCoding,
             EventDates.Now
         )
         setTopString(getTopString(diffInDay))
@@ -31,8 +31,8 @@ const OurBangkokTrip = () => {
             <>
                 <div className="flex h-full w-full items-center justify-center pt-24">
                     <AnimatedElementLayout
-                        nextPath="OurFirstCoding"
-                        prevPath="OurFirstDay"
+                        nextPath="OurJapanTrip"
+                        prevPath="OurBangkokTrip"
                     >
                         <>
                             <div className="relative">
@@ -48,7 +48,7 @@ const OurBangkokTrip = () => {
                                 <div className="absolute bottom-full right-1/2 w-52 translate-x-1/2">
                                     <Image
                                         priority={true}
-                                        src={preloadedImage.Bangkok}
+                                        src={preloadedImage.RPS}
                                         alt="Bangkok"
                                         className="select-none object-contain"
                                         draggable={false}
@@ -60,7 +60,7 @@ const OurBangkokTrip = () => {
                 </div>
             </>
         )
-    }, [bottomString, middleString, preloadedImage.Bangkok, topString])
+    }, [bottomString, middleString, preloadedImage.RPS, topString])
 
     return <>{renderDayString}</>
 }

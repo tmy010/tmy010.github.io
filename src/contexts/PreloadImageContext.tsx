@@ -11,6 +11,7 @@ import InstagramScreenshot from '../../public/images/InstagramScreenshot.png'
 import Island from '../../public/images/Island.png'
 import Japan from '../../public/images/Japan.png'
 import Sakura from '../../public/images/Sakura.png'
+import RPS from '../../public/images/RPS.png'
 
 const PreloadImageContext = createContext(
     {} as {
@@ -25,6 +26,7 @@ const PreloadImageContext = createContext(
         Island: StaticImageData
         Japan: StaticImageData
         Sakura: StaticImageData
+        RPS: StaticImageData
     }
 )
 
@@ -45,6 +47,7 @@ export const PreloadImageProvider: FC<{ children: ReactNode }> = ({
                 Island,
                 Japan,
                 Sakura,
+                RPS,
             }}
         >
             {children}

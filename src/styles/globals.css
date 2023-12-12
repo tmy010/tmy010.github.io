@@ -28,7 +28,7 @@
 
 @keyframes PageThreeToPageTwo {
     0% {
-        background: #8FC9AE;
+        background: #8fc9ae;
     }
     100% {
         background: #1f4e79;
@@ -40,116 +40,133 @@
         background: #1f4e79;
     }
     100% {
-        background: #8FC9AE;
+        background: #8fc9ae;
     }
 }
 
 @keyframes PageFourToPageThree {
     0% {
-        background: #9CD9DE;
+        background: #9cd9de;
     }
     100% {
-        background: #8FC9AE;
+        background: #8fc9ae;
     }
 }
 
 @keyframes PageThreeToPageFour {
     0% {
-        background: #8FC9AE;
+        background: #8fc9ae;
     }
     100% {
-        background: #9CD9DE;
+        background: #9cd9de;
     }
 }
 
 @keyframes PageFiveToPageFour {
     0% {
-        background: #E16262;
+        background: #e16262;
     }
     100% {
-        background: #9CD9DE;
+        background: #9cd9de;
     }
 }
 
 @keyframes PageFourToPageFive {
     0% {
-        background: #9CD9DE;
+        background: #9cd9de;
     }
     100% {
-        background: #E16262;
+        background: #e16262;
     }
 }
 
 @keyframes PageSixToPageFive {
     0% {
-        background: #C5ECBE;
+        background: #c5ecbe;
     }
     100% {
-        background: #E16262;
+        background: #e16262;
     }
 }
 
 @keyframes PageFiveToPageSix {
     0% {
-        background: #E16262;
+        background: #e16262;
     }
     100% {
-        background: #C5ECBE;
+        background: #c5ecbe;
     }
 }
 
 @keyframes PageSevenToPageSix {
     0% {
-        background: #A4C3D2;
+        background: #a4c3d2;
     }
     100% {
-        background: #C5ECBE;
+        background: #c5ecbe;
     }
 }
 
-
 @keyframes PageSixToPageSeven {
     0% {
-        background: #C5ECBE;
+        background: #c5ecbe;
     }
     100% {
-        background: #A4C3D2;
+        background: #a4c3d2;
     }
 }
 
 @keyframes PageEightToPageSeven {
     0% {
-        background: #D3F5FF;
+        background: #d3f5ff;
     }
     100% {
-        background: #A4C3D2;
+        background: #a4c3d2;
     }
 }
 
 @keyframes PageSevenToPageEight {
     0% {
-        background: #A4C3D2;
+        background: #a4c3d2;
     }
     100% {
-        background: #D3F5FF;
+        background: #d3f5ff;
     }
 }
 
 @keyframes PageNineToPageEight {
     0% {
-        background: #F2E6CE;
+        background: #653780;
     }
     100% {
-        background: #D3F5FF;
+        background: #d3f5ff;
     }
 }
 
 @keyframes PageEightToPageNine {
     0% {
-        background: #D3F5FF;
+        background: #d3f5ff;
     }
     100% {
-        background: #F2E6CE;
+        background: #653780;
+    }
+}
+
+@keyframes PageTenToPageNine {
+    0% {
+        background: #f2e6ce;
+    }
+    100% {
+        background: #653780;
+    }
+}
+
+@keyframes PageNineToPageTen {
+    0% {
+        background: #653780;
+    }
+    100% {
+        background: #f2e6ce;
     }
 }
 
@@ -184,15 +201,14 @@ body {
     height: calc(var(--vh, 1vh) * 100);
 }
 
-div[data-ishidden="true"] {
+div[data-ishidden='true'] {
     animation: 0.5s linear 0s HideContent;
     opacity: 0;
 }
 
-div[data-ishidden="false"] {
+div[data-ishidden='false'] {
     animation: 0.5s linear 0s ShowContent;
 }
-
 
 .background-container[data-currentroute='/OurStart'] {
     background: #efeae6;
@@ -223,115 +239,131 @@ div[data-ishidden="false"] {
 }
 
 .background-container[data-currentroute='/OurFirstCall'] {
-    background: #8FC9AE;
-    color: #385B66;
+    background: #8fc9ae;
+    color: #385b66;
 }
 
 .background-container[data-currentroute='/OurFirstCall?from=left'] {
     animation: 0.5s linear 0s PageTwoToPageThree;
-    background: #8FC9AE;
-    color: #385B66;
+    background: #8fc9ae;
+    color: #385b66;
 }
 
 .background-container[data-currentroute='/OurFirstCall?from=right'] {
     animation: 0.5s linear 0s PageFourToPageThree;
-    background: #8FC9AE;
-    color: #385B66;
+    background: #8fc9ae;
+    color: #385b66;
 }
 
 .background-container[data-currentroute='/OurPenangTrip'] {
-    background: #9CD9DE;
-    color: #588D9C;
+    background: #9cd9de;
+    color: #588d9c;
 }
 
 .background-container[data-currentroute='/OurPenangTrip?from=left'] {
     animation: 0.5s linear 0s PageThreeToPageFour;
-    background: #9CD9DE;
-    color: #588D9C;
+    background: #9cd9de;
+    color: #588d9c;
 }
 
 .background-container[data-currentroute='/OurPenangTrip?from=right'] {
     animation: 0.5s linear 0s PageFiveToPageFour;
-    background: #9CD9DE;
-    color: #588D9C;
+    background: #9cd9de;
+    color: #588d9c;
 }
 
 .background-container[data-currentroute='/OurFirstDate'] {
-    background: #E16262;
-    color: #FABC60;
+    background: #e16262;
+    color: #fabc60;
 }
 
 .background-container[data-currentroute='/OurFirstDate?from=left'] {
     animation: 0.5s linear 0s PageFourToPageFive;
-    background: #E16262;
-    color: #FABC60;
+    background: #e16262;
+    color: #fabc60;
 }
 
 .background-container[data-currentroute='/OurFirstDate?from=right'] {
     animation: 0.5s linear 0s PageSixToPageFive;
-    background: #E16262;
-    color: #FABC60;
+    background: #e16262;
+    color: #fabc60;
 }
 
 .background-container[data-currentroute='/OurKLTrip'] {
-    background: #C5ECBE;
-    color: #4797B1;
+    background: #c5ecbe;
+    color: #4797b1;
 }
 
 .background-container[data-currentroute='/OurKLTrip?from=left'] {
     animation: 0.5s linear 0s PageFiveToPageSix;
-    background: #C5ECBE;
-    color: #4797B1;
+    background: #c5ecbe;
+    color: #4797b1;
 }
 
 .background-container[data-currentroute='/OurKLTrip?from=right'] {
     animation: 0.5s linear 0s PageSevenToPageSix;
-    background: #C5ECBE;
-    color: #4797B1;
+    background: #c5ecbe;
+    color: #4797b1;
 }
 
 .background-container[data-currentroute='/OurFirstDay'] {
-    background: #A4C3D2;
-    color: #78A2CC;
+    background: #a4c3d2;
+    color: #78a2cc;
 }
 
 .background-container[data-currentroute='/OurFirstDay?from=left'] {
     animation: 0.5s linear 0s PageSixToPageSeven;
-    background: #A4C3D2;
-    color: #78A2CC;
+    background: #a4c3d2;
+    color: #78a2cc;
 }
 
 .background-container[data-currentroute='/OurFirstDay?from=right'] {
     animation: 0.5s linear 0s PageEightToPageSeven;
-    background: #A4C3D2;
-    color: #78A2CC;
+    background: #a4c3d2;
+    color: #78a2cc;
 }
 
-
 .background-container[data-currentroute='/OurBangkokTrip'] {
-    background: #D3F5FF;
-    color: #232A31;
+    background: #d3f5ff;
+    color: #232a31;
 }
 
 .background-container[data-currentroute='/OurBangkokTrip?from=left'] {
     animation: 0.5s linear 0s PageSevenToPageEight;
-    background: #D3F5FF;
-    color: #232A31;
+    background: #d3f5ff;
+    color: #232a31;
 }
 
 .background-container[data-currentroute='/OurBangkokTrip?from=right'] {
     animation: 0.5s linear 0s PageNineToPageEight;
-    background: #D3F5FF;
-    color: #232A31;
+    background: #d3f5ff;
+    color: #232a31;
+}
+
+.background-container[data-currentroute='/OurFirstCoding'] {
+    background: #653780;
+    color: #3f1651;
+}
+
+.background-container[data-currentroute='/OurFirstCoding?from=left'] {
+    animation: 0.5s linear 0s PageEightToPageNine;
+    background: #653780;
+    color: #3f1651;
+}
+
+.background-container[data-currentroute='/OurFirstCoding?from=right'] {
+    animation: 0.5s linear 0s PageTenToPageNine;
+    background: #653780;
+    color: #3f1651;
 }
 
 .background-container[data-currentroute='/OurJapanTrip'] {
-    background: #F2E6CE;
-    color: #B22124;
+    background: #f2e6ce;
+    color: #b22124;
 }
 
 .background-container[data-currentroute='/OurJapanTrip?from=left'] {
-    animation: 0.5s linear 0s PageEightToPageNine;
-    background: #F2E6CE;
-    color: #B22124;
+    animation: 0.5s linear 0s PageNineToPageTen;
+    background: #f2e6ce;
+    color: #b22124;
 }
